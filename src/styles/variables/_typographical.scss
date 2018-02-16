@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100i,400,400i,700|Lustria');
+
+/* Fonts */
+$lato: 'lato', serif;
+$lustria: 'Lustria', sans-serif;
+$default-font-family: #{$lustria};
+
+/*Line height*/
+$paragraph-line-height: 1.45;
+
+/*Spacing */
+$spacing--tiny: .5rem;
+$spacing--small: 1rem;
+$spacing--medium: 1.5rem;
+$spacing--large: 2rem;
+$spacing--xlarge: 3rem;
+
+/*********************************************************/
+/* Size Variables */
+
+/* Define modular scale */
+// Generated using http://www.modularscale.com/?1&em&1.125&web&text
+// This is basis of all the default-font-sizes we use (try not to add any more sizes)
+
+$ms10: 3.247rem;
+$ms9: 2.887rem;
+$ms8: 2.566rem;
+$ms7: 2.281rem;
+$ms6: 2.027rem;
+$ms5: 1.802rem;
+$ms4: 1.602rem;
+$ms3: 1.424rem;
+$ms2: 1.266rem;
+$ms1: 1.125rem;
+$ms0b: 1rem; // this needs to be here because there's too big of a gap between $ms1 and $ms0
+$ms0: 0.9375rem; // This is the only value we hand-tweaked, for aesthetic reasons
+$ms-1: 0.889rem;
+$ms-2: 0.79rem;
+$ms-3: 0.702rem;
+$ms-4: 0.624rem;
+$ms-5: 0.5rem;
+
+
+/*********************************************************/
+/* Define typographical proportions at various screen sizes */
+
+/* Default: > 900px */
+$font-sizes--default: (
+  p:      $ms0b,
+  small:  $ms0,
+  intro:  $ms3,
+  list:   $ms0b,
+  dt:     $ms2,
+  h1:     $ms8,
+  h2:     $ms6,
+  h3:     $ms3,
+  h4:     $ms1,
+  h5:     $ms0
+);
+
+/* Large: 720-900px */
+$font-sizes--large-screen: (
+  p:      $ms0,
+  small:  $ms-1,
+  intro:  $ms2,
+  list:   $ms0,
+  dt:     $ms1,
+  h1:     $ms8,
+  h2:     $ms5,
+  h3:     $ms2,
+  h4:     $ms1,
+  h5:     $ms-1
+);
+
+/* Medium: 540-720px */
+$font-sizes--medium-screen: (
+  p:      $ms0,
+  small:  $ms-1,
+  intro:  $ms2,
+  list:   $ms0,
+  dt:     $ms1,
+  h1:     $ms6,
+  h2:     $ms4,
+  h3:     $ms2,
+  h4:     $ms1,
+  h5:     $ms-1
+);
+
+/* Small: 400-540px */
+$font-sizes--small-screen: (
+  p:      $ms0,
+  small:  $ms-1,
+  intro:  $ms2,
+  list:   $ms0,
+  dt:     $ms0,
+  h1:     $ms6,
+  h2:     $ms4,
+  h3:     $ms2,
+  h4:     $ms1,
+  h5:     $ms-1
+);
+
+/* Small: 400-540px */
+$font-sizes--x-small-screen: (
+  p:      $ms-1,
+  small:  $ms-2,
+  intro:  $ms1,
+  list:   $ms-1,
+  dt:     $ms0,
+  h1:     $ms5,
+  h2:     $ms3,
+  h3:     $ms1,
+  h4:     $ms0,
+  h5:     $ms-2
+);
+
+/*********************************************************/
+/* The all-powerful Responsive Font Sizes mixin! */
+
+@mixin responsive-font-sizes($element, $multiplier:1) {
+  font-size: #{map-get($font-sizes--default, $element) * $multiplier} ;
+
+  @include screen-max-width($bp-lg) {
+    font-size: #{map-get($font-sizes--large-screen, $element) * $multiplier};
+  }
+
+  @include screen-max-width($bp-md) {
+    font-size: #{map-get($font-sizes--medium-screen, $element) * $multiplier};
+  }
+
+  @include screen-max-width($bp-sm) {
+    font-size: #{map-get($font-sizes--small-screen, $element) * $multiplier};
+  }
+
+  // @include screen-max-width($breakpoint-xs) {
+    // font-size: #{map-get($font-sizes--x-small-screen, $element) * $multiplier};
+  // }
+}
+
+
+/*********************************************************/
+/* List Style Re-Reset */
+
+$default-list-indent: 2.65rem;
+$default-list-spacing: .65rem;
+
+%default-list-style {
+  ul {
+    list-style: disc;
+  }
+
+  ol {
+    list-style-type: decimal;
+  }
+}

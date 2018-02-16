@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100i,400,400i,700|Lustria');
+
+
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+
+/*Spacing */
+$spacing--tiny: .5rem;
+$spacing--small: 1rem;
+$spacing--medium: 1.5rem;
+$spacing--large: 2rem;
+$spacing--xlarge: 3rem;
+
+/*Color*/
+$primary-color: red;
+$secondary-color: blue;
+
+/* Grays */
+$gray-extra-extra-extra-light: #F8F9F9;
+$gray-extra-extra-light: #EEF2F5;
+$gray-extra-light: #E3EBEF;
+$gray-light: #CCD6DE;
+$gray: #A8BBC7;
+$gray-dark: #8297A4;
+$gray-extra-dark: #5D6E7A;
+
+/* Fonts */
+$lato: 'lato', serif;
+$lustria: 'Lustria', sans-serif;
+$default-font-family: #{$lustria};

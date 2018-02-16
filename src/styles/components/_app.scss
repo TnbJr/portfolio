@@ -1,0 +1,18 @@
+.primaryLayout{
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment:fixed;
+	display: flex;
+	flex-flow: row wrap;
+	flex:1;
+	min-height: 900px;
+	.primaryLayout__main{
+		height: 100%;
+	}
+	@include md {
+		flex-flow: column wrap;
+		height: auto;
+	}
+}

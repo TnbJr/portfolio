@@ -1,0 +1,39 @@
+/*********************************************************/
+/* Global default style rules for AR web properties */
+
+/*********************************************************/
+/* Default Body Styles */
+
+body {
+  background: #fff;
+  font-family: $default-font-family;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: $lato;
+	font-weight: normal;
+}
+
+a {
+  cursor: pointer; // Force hand-style cursor (b/c in the absence of a href property, browser uses regular arrow cursor)
+  text-decoration: none;
+  
+  &:hover{
+  	text-decoration: none;
+  }
+}
+
+
+
+/*********************************************************/
+/* Make padding go *inside* the width/height of a block level element */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}

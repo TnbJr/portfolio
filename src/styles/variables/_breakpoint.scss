@@ -1,0 +1,36 @@
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+
+
+
+@mixin screen-max-width($width) {
+	@media screen and (max-width: $width) {
+		@content;
+	}
+}
+
+@mixin xl() {
+	@media screen and (max-width: #{$bp-xl}){
+		@content
+	}
+}
+
+@mixin lg() {
+	@media screen and (max-width: #{$bp-lg}){
+		@content
+	}
+}
+
+@mixin md() {
+	@media screen and (max-width: #{$bp-md}){
+		@content
+	}
+}
+
+@mixin sm() {
+	@media screen and (max-width: #{$bp-sm}){
+		@content
+	}
+}
