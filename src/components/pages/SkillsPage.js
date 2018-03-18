@@ -14,7 +14,7 @@ const SkillPage = () =>{
                     <TextBlock className="text-block">
                         <h2 className="text-block__heading">My Skills</h2>
                         <p className="text-block__p">I am a <strong>full-stack web developer</strong> with over <strong>three years of professional experience</strong> working on web applications.</p>
-                        <p className="text-block__p">I have maintained, developed and launched <a href="#">multiple projects</a> from scratch, carrying the development of its' back-end and front-end codebases.</p>
+                        <p className="text-block__p">I have maintained, developed and launched <a href="/portfolio">multiple projects</a> from scratch, carrying the development of its' back-end and front-end codebases.</p>
                         <p className="text-block__p">My current toolset includes <a href="https://reactjs.org/">React</a>, <a href="https://redux.js.org/">Redux</a>, <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Javascript</a>, <a href="https://www.python.org/">Python</a>, <a href="http://flask.pocoo.org/">Flask</a>, <a href="https://www.djangoproject.com/">Django</a> and all the other various frameworks, libraries and technologies related to them.</p>
                         <hr/>
                     </TextBlock>

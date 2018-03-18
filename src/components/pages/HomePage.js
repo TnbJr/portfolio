@@ -1,12 +1,12 @@
 import React from 'react'
-import Page from './Page.js'
 
 const HomePage = () =>{
-	return(
-		<Page>
-			<h1>HomePage</h1>
-		</Page>
-	)
+  return(
+    <div className="home-page">
+      <h1>Hi I'm Jared.</h1>
+      <h2>I am a freelance web developer specialised in both front-end and back-end development.</h2>
+      </div>
+  )
 }
 
 export default HomePage
