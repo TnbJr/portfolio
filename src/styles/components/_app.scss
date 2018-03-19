@@ -17,18 +17,10 @@
 	}
 	.home-page {
 	    padding: 10rem 2rem;
-	    color: #fff;
+	    color: #ff7f00;
 	    margin-left: 2rem;
 	    position: relative;
-	    z-index: 10;
-	    .hp--bg {
-		    background-color: rgba(0, 90, 179, 0.7);
-		    position: absolute;
-		    top: 0;
-		    bottom: 0;
-		    left: 0;
-		    right: 0;
-		}	
+	    z-index: 10;	
 	    h1{
 	    	font-size: 4rem;
 	    }
