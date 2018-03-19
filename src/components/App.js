@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
-
 import {AboutMePage, HomePage, PortfolioPage, SkillsPage} from './pages/index.js';
 import {Row, Col} from './grid/Grid.js'
 import SideBar from './SideBar.js';
@@ -27,6 +26,7 @@ const PrimaryLayout = () =>{
               <Route exact path="/skills" component={SkillsPage}/>
               <Route path="/portfolio" component={PortfolioPage}/>
               <Route path="/about-me" component={AboutMePage}/>
+              <Route component={AboutMePage}/>
             </Switch>
           </main>
         </Col>

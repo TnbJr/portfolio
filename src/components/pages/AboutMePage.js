@@ -18,8 +18,7 @@ const AboutMePage = () =>{
             <p className="text-block__p">
               When I am not programming or learning about the latest and greates Python/JS technologies you can find me <strong>helping out my community</strong>. I also enjoy <strong>listening to music, playing basketball, and playing video games</strong>. 
             </p>
-                  </TextBlock>
-
+          </TextBlock>
         </Col>
         <Col sm="12" md="5" className="about-element-image">
           <div className="image-wrapper">

@@ -17,15 +17,19 @@
 	}
 	.home-page {
 	    padding: 10rem 2rem;
-	    color: #fff;
-	    margin-left: 2rem;
+	    color: #005AB4;
 	    position: relative;
-	    z-index: 10;	
+	    height: 100%;
+	        background-color: rgba(255, 255, 254, .7);	
 	    h1{
-	    	font-size: 4rem;
+	    	z-index: 10;
+	    	@include responsive-font-sizes(h1);
+	    	margin-bottom: $spacing--small;
 	    }
 	    h2{
-	    	font-size: 3rem;
+	    	z-index: 10;
+	    	@include responsive-font-sizes(h2);
+	    	margin-bottom: $spacing--small;
 	    }
 	}
 }
