@@ -47,7 +47,7 @@ class SideBar extends React.Component {
           </div>
           <div className="nav__menu">
             <ul>
-              {this.props.menus.map((menu, index) =>(<NavLink to={menu.link} activeClassName='is-active' display={this.state.showMenuItems.toString()} key={`${menu.text}-${index}`}>{menu.text}</NavLink>))}
+              {this.props.menus.map((menu, index) =>(<NavLink to={menu.link} activeClassName='is-active' display={this.state.showMenuItems ? this.state.showMenuItems.toString() : undefined  } key={`${menu.text}-${index}`}>{menu.text}</NavLink>))}
             </ul>
           </div>  
       </nav>
