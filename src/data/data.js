@@ -1,6 +1,7 @@
 import assessre from '../images/assessre.png';
 import mio from '../images/mio.png';
 import foods from '../images/health-foods.png';
+import anchored from '../images/anchored.png';
 
 const data = {
   menus: [
@@ -30,7 +31,7 @@ const data = {
       date: "Aug 2017",
       name: "Anchored In Love International",
       webLink:"http://www.anchoredinloveinternational.org/",
-      image:"",
+      image:anchored,
       contentParagraphs: ["Anchored in Love International is a non-profit that is dedicated to enriching the lives of underprivileged children across the globe.", "The primary goal for this project was to create a website that can collect donations and inform donors about upcoming events."],
       contentList: ["Built an responsive website for cross browser and multiple devices using HTML5/CSS3 and Bootstrap", "Integrated BrainTree/PayPal payment processing API to collect donations"],
       techTags: [ "Django", "Python", "Bootstrap", "jQuery", "HTML/CSS"]
